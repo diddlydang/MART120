@@ -1,0 +1,40 @@
+<head>
+    <title>Third Page</title>
+</head>
+<script>
+ function checkboxes()
+        {
+            var firstName = document.getElementById("fName").value;
+            if(firstName == "")
+            {
+                document.getElementById("fName").focus();
+                document.getElementById("fName").style.backgroundColor = "red";
+                document.getElementById("fNameMessage").innerHTML = "* Required";
+                document.getElementById("fNameMessage").style.color = "red";
+                
+                return false;
+            }
+        }
+    function checkboxes()
+        {
+            var LastName = document.getElementById("lName").value;
+            if(LastName == "")
+            {
+                document.getElementById("fNameMessage").innerHTML = "* Required";
+            }
+        }
+                
+</script>
+<body style="background-color: cornsilk;"
+    style="margin-left: 35px;">
+        <h1>Contact Us</h1>
+        <p></p>
+        
+            <p>First Name: <input type="text" id="fName">&nbsp;<span id="fNameMessage"></span></p>
+            <p>Last Name: <input type="text" id="lName"></p>
+            <button id="btnSubmit" class="btn btn-primary" onclick='checkboxes();'>Submit My Info</button>
+    <br />
+    <a href="homepage.html" style="text-decoration: wavy" target="_new">Go to Homepage</a>
+    <br />
+    <a href="Second Page.html" style="text-decoration: wavy" target="_new">Go to Second Page</a>
+</body>
